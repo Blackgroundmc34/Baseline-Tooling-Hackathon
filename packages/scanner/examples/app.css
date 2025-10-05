@@ -6,3 +6,20 @@
 @container (width > 400px) {
   .box { color: rebeccapurple; }
 }
+/* Baseline-safe default */
+.wordy { word-break: normal; }
+
+/* Progressive enhancement (Not in Baseline) */
+@supports (word-break: auto-phrase) {
+  .wordy { word-break: auto-phrase; }
+}
+
+/* A few common modern features to light up the report */
+.card {
+  container-type: inline-size; /* @container support */
+  color: oklch(60% 0.12 240);  /* color function */
+}
+@container (width > 40rem) { .card { padding: 1.5rem; } }
+
+/* :has() selector (often interesting for teams) */
+.nav:has(> .active) { outline: 2px solid; }
