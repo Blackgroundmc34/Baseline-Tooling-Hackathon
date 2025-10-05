@@ -1,5 +1,7 @@
 # 1) make sure you can run the CLI
-npm --prefix packages/scanner run build
+npx ts-node --transpile-only test-parse.ts
+npm run scan
+npm run build
 
 # 2) confirm Pages link for the on-screen demo (just for you to know)
 echo "Live demo URL:"
@@ -23,10 +25,11 @@ git add packages/scanner/examples/app.css
 git commit -m "test: add not-in-baseline declarations to trigger CI gate"
 git push -u origin demo/failing-gate
 
-Create a PR:
 
-If you have GitHub CLI:
+//pull request
 gh pr create --fill --head demo/failing-gate
+
+Create a PR:
 
 
 cat > packages/scanner/baseline-allow.json << 'JSON'

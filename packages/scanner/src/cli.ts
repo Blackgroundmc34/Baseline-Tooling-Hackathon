@@ -2,11 +2,11 @@
 /**
  * baseline-compat CLI
  * Usage:
- *   npx baseline-compat [path-to-repo]
  *   node dist/cli.js [path-to-repo]
+ *   (after linking) baseline-compat [path-to-repo]
  *
  * It will:
- *   - run the scanner with the provided root (or default)
+ *   - run the scanner with the provided root (or repo root default)
  *   - generate report.json/html/csv in a temp work dir
  *   - copy them into <target>/baseline-compat-report/
  */
@@ -23,37 +23,37 @@ function die(msg: string) {
 
 async function main() {
   // target repo path (defaults to two levels up from the CLI package location)
-  const arg = process.argv.slice(2).find(a => !a.startsWith('-'));
+  const arg = process.argv.slice(2).find((a) => !a.startsWith('-'));
   const targetRoot = arg
     ? path.resolve(process.cwd(), arg)
     : path.resolve(process.cwd(), '..', '..');
 
   if (!fs.existsSync(targetRoot)) die(`Target path not found: ${targetRoot}`);
 
-  // temp work dir where index.js/report-html.js will write outputs
+  // Work in a temporary directory to avoid touching the project during generation
   const tmp = await fsp.mkdtemp(path.join(os.tmpdir(), 'baseline-compat-'));
 
-  // 1) run the compiled scanner with root param; cwd = temp dir
+  // 1) Run the compiled scanner (index.js) with more heap
   {
     const res = spawnSync(
-      process.execPath, // 'node'
-      [path.join(__dirname, 'index.js'), targetRoot],
-      { stdio: 'inherit', cwd: tmp }
+      process.execPath,
+      ['--max-old-space-size=4096', path.join(__dirname, 'index.js'), targetRoot],
+      { stdio: 'inherit', cwd: tmp, env: { ...process.env } }
     );
     if (res.status !== 0) die('Scan failed.');
   }
 
-  // 2) build HTML/CSV in same temp dir
+  // 2) Build the HTML/CSV (report-html.js)
   {
     const res = spawnSync(
       process.execPath,
-      [path.join(__dirname, 'report-html.js')],
-      { stdio: 'inherit', cwd: tmp }
+      ['--max-old-space-size=2048', path.join(__dirname, 'report-html.js')],
+      { stdio: 'inherit', cwd: tmp, env: { ...process.env } }
     );
     if (res.status !== 0) die('Report build failed.');
   }
 
-  // 3) copy artifacts back to the target repo
+  // 3) Copy artifacts back to the target repo
   const outDir = path.join(targetRoot, 'baseline-compat-report');
   await fsp.mkdir(outDir, { recursive: true });
   for (const file of ['report.json', 'report.html', 'report.csv']) {
@@ -63,9 +63,7 @@ async function main() {
     }
   }
 
-  // 4) print the location
-  console.log('');
-  console.log('Baseline report written to:');
+  console.log('\nBaseline report written to:');
   console.log('  ' + outDir);
   console.log('Open:');
   console.log('  ' + path.join(outDir, 'report.html'));
