@@ -5,13 +5,13 @@
   "main": "index.js",
   "bin": { "baseline-compat": "dist/cli.js" },
   "scripts": {
-    "scan": "ts-node --transpile-only src/index.ts",
     "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "scan": "ts-node --transpile-only src/index.ts",
     "scan:nohtml": "ts-node --transpile-only src/index.ts -- --no-html",
     "report": "ts-node --transpile-only src/report-html.ts",
     "ci": "npm run scan && npm run report && ts-node --transpile-only src/threshold.ts",
-    "scan:full": "npm run scan && npm run report",
-    "prepublishOnly": "npm run build"
+    "scan:full": "npm run scan && npm run report"
   },
   "keywords": [],
   "author": "",

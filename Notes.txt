@@ -1,0 +1,42 @@
+# 1) make sure you can run the CLI
+npm --prefix packages/scanner run build
+
+# 2) confirm Pages link for the on-screen demo (just for you to know)
+echo "Live demo URL:"
+echo "https://blackgroundmc34.github.io/Baseline-Tooling-Hackathon/"
+
+# 3) open the live report in your browser to have the tab ready
+# (Git Bash on Windows)
+explorer "https://blackgroundmc34.github.io/Baseline-Tooling-Hackathon/"
+
+# in repo root
+node packages/scanner/dist/cli.js .
+
+# open the generated local report (optional to show)
+explorer baseline-compat-report\report.html
+
+This adds two extra not-in-Baseline declarations to exceed your MAX_NONE=3 policy.
+
+git checkout -b demo/failing-gate
+printf '\n.bad1{word-break:auto-phrase}\n.bad2{word-break:auto-phrase}\n' >> packages/scanner/examples/app.css
+git add packages/scanner/examples/app.css
+git commit -m "test: add not-in-baseline declarations to trigger CI gate"
+git push -u origin demo/failing-gate
+
+Create a PR:
+
+If you have GitHub CLI:
+gh pr create --fill --head demo/failing-gate
+
+
+cat > packages/scanner/baseline-allow.json << 'JSON'
+{
+  "rules": [
+    { "bcdKey": "css.properties.word-break.auto-phrase", "max": 10, "reason": "Progressive enhancement; fallback present" }
+  ]
+}
+JSON
+
+git add packages/scanner/baseline-allow.json
+git commit -m "ci: allowlist auto-phrase while fallback exists"
+git push
