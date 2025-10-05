@@ -1,0 +1,5 @@
+{
+  "rules": [
+    { "bcdKey": "css.properties.word-break.auto-phrase", "max": 10, "reason": "Fallback present" }
+  ]
+}

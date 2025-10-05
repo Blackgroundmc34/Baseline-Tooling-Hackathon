@@ -1,0 +1,8 @@
+.box {
+  display: grid;           /* property-level key (likely high) */
+  word-break: auto-phrase; /* value-level key -> should be risky */
+}
+
+@container (width > 400px) {
+  .box { color: rebeccapurple; }
+}

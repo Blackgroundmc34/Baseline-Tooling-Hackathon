@@ -1,0 +1,3404 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Baseline Compatibility Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;margin:1.5rem}
+h1{font-size:1.3rem;margin:0 0 .5rem}
+.grid{display:grid;gap:.75rem}
+sum{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin:.25rem 0 1rem}
+.badges{display:flex;gap:.5rem}
+.b{display:inline-block;padding:.15rem .4rem;border-radius:.5rem;font-size:.8rem;border:1px solid #ccc}
+.b.hi{background:#eefbe7}
+.b.lo{background:#fff8e1}
+.b.no{background:#fdecea}
+.b.un{background:#eef2f7}
+table{border-collapse:collapse;width:100%}
+caption{text-align:left;font-weight:600;margin:.25rem 0}
+th,td{border:1px solid #ddd;padding:.5rem;vertical-align:top}
+th{background:#f7f7f7}
+code{background:#f5f5f5;padding:.1rem .25rem;border-radius:.25rem}
+.actions{margin:.5rem 0 1rem;display:flex;gap:.5rem}
+button{padding:.5rem .75rem;border-radius:.5rem;border:1px solid #bbb;background:#fff;cursor:pointer}
+button:hover{background:#f2f2f2}
+</style>
+<h1>Baseline Compatibility Report</h1>
+<sum role="group" aria-label="Summary">
+  <div><strong>Scanned:</strong> 2025/10/05, 14:27:34</div>
+  <div><strong>Root:</strong> <code>D:/Projects/baseline-compat-dashboard</code></div>
+  <div class="badges" aria-label="Baseline summary">
+    <span class="b hi">Widely: 369</span>
+    <span class="b lo">Newly: 0</span>
+    <span class="b no">Not in: 3</span>
+  </div>
+</sum>
+<div class="actions">
+  <a download="report.csv" href="report.csv"><button type="button">Download CSV</button></a>
+</div>
+<table>
+  <caption>Findings (sorted by risk)</caption>
+  <thead>
+    <tr>
+      <th scope="col">Baseline</th>
+      <th scope="col">File</th>
+      <th scope="col">Line</th>
+      <th scope="col">Feature</th>
+      <th scope="col">BCD Key</th>
+      <th scope="col">Docs</th>
+      <th scope="col">Advice</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td><span aria-label="Not in Baseline" title="Not in Baseline" class="b no">Not in</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>3</td>
+        <td>word-break: auto-phrase</td>
+        <td><code>css.properties.word-break.auto-phrase</code></td>
+        <td></td>
+        <td>Feature is not in Baseline. Consider a fallback or feature detect before using (css.properties.word-break.auto-phrase).</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>2</td>
+        <td>Display</td>
+        <td><code>css.properties.display</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/CSS/display" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>2</td>
+        <td>Grid</td>
+        <td><code>css.properties.display.grid</code></td>
+        <td></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>3</td>
+        <td>word-break</td>
+        <td><code>css.properties.word-break</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/CSS/word-break" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>6</td>
+        <td>Container queries</td>
+        <td><code>css.at-rules.container</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/CSS/@container" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>7</td>
+        <td>Color</td>
+        <td><code>css.properties.color</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/CSS/color" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>0</td>
+        <td>&lt;head&gt;</td>
+        <td><code>html.elements.head</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/head" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>0</td>
+        <td>&lt;body&gt;</td>
+        <td><code>html.elements.body</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/body" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>2</td>
+        <td>&lt;html&gt;</td>
+        <td><code>html.elements.html</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/html" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>3</td>
+        <td>&lt;meta&gt;</td>
+        <td><code>html.elements.meta</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/meta" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>4</td>
+        <td>&lt;title&gt;</td>
+        <td><code>html.elements.title</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/title" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>5</td>
+        <td>&lt;meta&gt;</td>
+        <td><code>html.elements.meta</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/meta" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>6</td>
+        <td>&lt;style&gt;</td>
+        <td><code>html.elements.style</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/style" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>26</td>
+        <td>&lt;h1&gt; through &lt;h6&gt;</td>
+        <td><code>html.elements.h1</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/Heading_Elements" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>28</td>
+        <td>&lt;div&gt;</td>
+        <td><code>html.elements.div</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>28</td>
+        <td>&lt;strong&gt;</td>
+        <td><code>html.elements.strong</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/strong" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>29</td>
+        <td>&lt;div&gt;</td>
+        <td><code>html.elements.div</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>29</td>
+        <td>&lt;strong&gt;</td>
+        <td><code>html.elements.strong</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/strong" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>29</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>30</td>
+        <td>&lt;div&gt;</td>
+        <td><code>html.elements.div</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>31</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>32</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>33</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>36</td>
+        <td>&lt;div&gt;</td>
+        <td><code>html.elements.div</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/div" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>37</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>37</td>
+        <td>&lt;button&gt;</td>
+        <td><code>html.elements.button</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/button" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>39</td>
+        <td>Tables</td>
+        <td><code>html.elements.table</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/table" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>40</td>
+        <td>Tables</td>
+        <td><code>html.elements.caption</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/caption" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>41</td>
+        <td>Tables</td>
+        <td><code>html.elements.thead</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/thead" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>42</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>43</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>44</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>45</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>46</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>47</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>48</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>49</td>
+        <td>Tables</td>
+        <td><code>html.elements.th</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/th" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>52</td>
+        <td>Tables</td>
+        <td><code>html.elements.tbody</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tbody" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>54</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>55</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>55</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>56</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>56</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>57</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>58</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>59</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>59</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>60</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>61</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>63</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>64</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>64</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>65</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>65</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>66</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>67</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>68</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>68</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>69</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>69</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>70</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>72</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>73</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>73</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>74</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>74</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>75</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>76</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>77</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>77</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>78</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>79</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>81</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>82</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>82</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>83</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>83</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>84</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>85</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>86</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>86</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>87</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>87</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>88</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>90</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>91</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>91</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>92</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>92</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>93</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>94</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>95</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>95</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>96</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>96</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>97</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>99</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>100</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>100</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>101</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>101</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>102</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>103</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>104</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>104</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>105</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>105</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>106</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>108</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>109</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>109</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>110</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>110</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>111</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>112</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>113</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>113</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>114</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>114</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>115</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>117</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>118</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>118</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>119</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>119</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>120</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>121</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>122</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>122</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>123</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>123</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>124</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>126</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>127</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>127</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>128</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>128</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>129</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>130</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>131</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>131</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>132</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>132</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>133</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>135</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>136</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>136</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>137</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>137</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>138</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>139</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>140</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>140</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>141</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>141</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>142</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>144</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>145</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>145</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>146</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>146</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>147</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>148</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>149</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>149</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>150</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>150</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>151</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>153</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>154</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>154</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>155</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>155</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>156</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>157</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>158</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>158</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>159</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>159</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>160</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>162</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>163</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>163</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>164</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>164</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>165</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>166</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>167</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>167</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>168</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>168</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>169</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>171</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>172</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>172</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>173</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>173</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>174</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>175</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>176</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>176</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>177</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>177</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>178</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>180</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>181</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>181</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>182</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>182</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>183</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>184</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>185</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>185</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>186</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>186</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>187</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>189</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>190</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>190</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>191</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>191</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>192</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>193</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>194</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>194</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>195</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>195</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>196</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>198</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>199</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>199</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>200</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>200</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>201</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>202</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>203</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>203</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>204</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>204</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>205</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>207</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>208</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>208</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>209</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>209</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>210</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>211</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>212</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>212</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>213</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>213</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>214</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>216</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>217</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>217</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>218</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>218</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>219</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>220</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>221</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>221</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>222</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>222</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>223</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>225</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>226</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>226</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>227</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>227</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>228</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>229</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>230</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>230</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>231</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>231</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>232</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>234</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>235</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>235</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>236</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>236</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>237</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>238</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>239</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>239</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>240</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>240</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>241</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>243</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>244</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>244</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>245</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>245</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>246</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>247</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>248</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>248</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>249</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>249</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>250</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>252</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>253</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>253</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>254</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>254</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>255</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>256</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>257</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>257</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>258</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>258</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>259</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>261</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>262</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>262</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>263</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>263</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>264</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>265</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>266</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>266</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>267</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>267</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>268</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>270</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>271</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>271</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>272</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>272</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>273</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>274</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>275</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>275</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>276</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>276</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>277</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>279</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>280</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>280</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>281</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>281</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>282</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>283</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>284</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>284</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>285</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>285</td>
+        <td>&lt;a&gt;</td>
+        <td><code>html.elements.a</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>286</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>288</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>289</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>289</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>290</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>290</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>291</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>292</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>293</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>293</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>294</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>295</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>297</td>
+        <td>Tables</td>
+        <td><code>html.elements.tr</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>298</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>298</td>
+        <td>&lt;span&gt;</td>
+        <td><code>html.elements.span</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/span" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>299</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>299</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>300</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>301</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>302</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>302</td>
+        <td>&lt;code&gt;</td>
+        <td><code>html.elements.code</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/code" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>303</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Widely Baseline" title="Widely Baseline" class="b hi">Widely</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>304</td>
+        <td>Tables</td>
+        <td><code>html.elements.td</code></td>
+        <td><a href="https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/td" target="_blank" rel="noopener">MDN</a></td>
+        <td>Widely Baseline. Generally safe; still test on your supported browsers.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Unknown" title="Unknown" class="b un">Unknown</span></td>
+        <td><code>packages/scanner/examples/app.css</code></td>
+        <td>7</td>
+        <td></td>
+        <td><code>css.properties.color.rebeccapurple</code></td>
+        <td></td>
+        <td>Feature is not in Baseline. Consider a fallback or feature detect before using (css.properties.color.rebeccapurple).</td>
+      </tr>
+      <tr>
+        <td><span aria-label="Unknown" title="Unknown" class="b un">Unknown</span></td>
+        <td><code>packages/scanner/report.html</code></td>
+        <td>27</td>
+        <td></td>
+        <td><code>html.elements.sum</code></td>
+        <td></td>
+        <td>Feature is not in Baseline. Consider a fallback or feature detect before using (html.elements.sum).</td>
+      </tr>
+  </tbody>
+</table>
+</html>

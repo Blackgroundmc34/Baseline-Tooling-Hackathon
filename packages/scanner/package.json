@@ -1,0 +1,35 @@
+{
+  "name": "scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": { "baseline-compat": "dist/cli.js" },
+  "scripts": {
+    "scan": "ts-node --transpile-only src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "scan:nohtml": "ts-node --transpile-only src/index.ts -- --no-html",
+    "report": "ts-node --transpile-only src/report-html.ts",
+    "ci": "npm run scan && npm run report && ts-node --transpile-only src/threshold.ts",
+    "scan:full": "npm run scan && npm run report",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "css-tree": "^3.1.0",
+    "fast-glob": "^3.3.3",
+    "globby": "^15.0.0",
+    "parse5": "^8.0.0",
+    "postcss": "^8.5.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mdn/browser-compat-data": "^7.1.10",
+    "compute-baseline": "^0.4.0",
+    "web-features": "^3.3.0"
+  }
+}
