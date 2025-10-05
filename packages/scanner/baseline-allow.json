@@ -1,5 +1,5 @@
 {
   "rules": [
-    { "bcdKey": "css.properties.word-break.auto-phrase", "max": 10, "reason": "Fallback present" }
+    { "bcdKey": "css.properties.word-break.auto-phrase", "max": 10, "reason": "Progressive enhancement; fallback present" }
   ]
 }
