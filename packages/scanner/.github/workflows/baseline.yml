@@ -1,14 +1,37 @@
 name: Baseline Compatibility
+
 on:
-  pull_request: { branches: [ "**" ] }
+  pull_request:
+    branches: ["**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: baseline-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  MAX_NONE: "3"
+  MAX_LOW: "10"
+  MAX_HIGH: "9999"
 
 jobs:
   scan:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: '20', cache: 'npm' }
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
 
       - name: Install deps (root)
         run: npm ci || npm i
@@ -17,14 +40,14 @@ jobs:
         working-directory: packages/scanner
         run: npm ci || npm i
 
-      - name: Run scan + report + gate
+      - name: Scan & Build Report (no gate)
         working-directory: packages/scanner
-        env:
-          MAX_NONE: '3'   # <-- your current policy
-          MAX_LOW:  '10'
-        run: npm run ci
+        run: |
+          npm run scan
+          npm run report
 
       - name: Upload artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: baseline-compat-report
@@ -32,16 +55,47 @@ jobs:
             packages/scanner/report.json
             packages/scanner/report.html
             packages/scanner/report.csv
+          if-no-files-found: error
+          retention-days: 7
 
-      - name: Comment summary on PR
+      # Run the gate but don't stop the job yet; we still want to comment & upload.
+      - name: Enforce Baseline Threshold
+        id: gate
+        working-directory: packages/scanner
+        env:
+          MAX_NONE: ${{ env.MAX_NONE }}
+          MAX_LOW:  ${{ env.MAX_LOW }}
+          MAX_HIGH: ${{ env.MAX_HIGH }}
+        run: npx ts-node --transpile-only src/threshold.ts
+        continue-on-error: true
+
+      - name: PR Comment (summary)
         if: always()
         uses: actions/github-script@v7
+        env:
+          GATE_OUTCOME: ${{ steps.gate.outcome }}   # <-- pass outcome via env
+          MAX_NONE: ${{ env.MAX_NONE }}
+          MAX_LOW:  ${{ env.MAX_LOW }}
         with:
           script: |
             const fs = require('fs');
             const rpt = JSON.parse(fs.readFileSync('packages/scanner/report.json','utf8'));
-            const s = rpt.summary.baseline;
-            const msg = `### Baseline Report\n**Widely:** ${s.high} · **Newly:** ${s.low} · **Not in:** ${s.none}\n\nArtifacts: report.html / report.csv (see Actions)`;
+            const s = rpt.summary?.baseline || { high: 0, low: 0, none: 0 };
+            const status = process.env.GATE_OUTCOME === 'success' ? '✅ Passed' : '❌ Failed';
+            const msg = `### Baseline Report (${status})
+**Widely:** ${s.high} · **Newly:** ${s.low} · **Not in:** ${s.none}
+
+Policy: \`MAX_NONE=${process.env.MAX_NONE}\` · \`MAX_LOW=${process.env.MAX_LOW}\`
+
+Artifacts: **report.html**, **report.csv** (see “Artifacts” in this workflow)`;
             await github.rest.issues.createComment({
-              owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: msg
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: msg
             });
+
+      # Finally, fail the job if the gate failed (so PRs are blocked).
+      - name: Fail if gate failed
+        if: steps.gate.outcome != 'success'
+        run: exit 1

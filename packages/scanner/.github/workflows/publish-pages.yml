@@ -1,31 +1,43 @@
 name: Publish Demo to Pages
+
 on:
   push:
     branches: [ main ]
     paths:
-      - 'packages/scanner/**'
-      - '.github/workflows/publish-pages.yml'
+      - "packages/scanner/**"
+      - ".github/workflows/publish-pages.yml"
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: { contents: write }
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
+        with:
+          node-version: "20"
+
+      - name: Install deps (root)
+        run: npm ci || npm i
+
+      - name: Install deps (scanner)
+        working-directory: packages/scanner
+        run: npm ci || npm i
+
       - name: Build report
-        run: |
-          npm ci
-          cd packages/scanner
-          npm ci || npm i
-          npm run scan:full
+        working-directory: packages/scanner
+        run: npm run scan:full
+
       - name: Update docs
         run: |
           mkdir -p docs
           cp packages/scanner/report.html docs/index.html
           cp packages/scanner/report.csv  docs/report.csv
           cp packages/scanner/report.json docs/report.json || true
+
       - name: Commit docs
         run: |
           git config user.name "github-actions"
